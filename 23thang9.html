@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--internal javascript-->
+    <script>
+        //in ra man hinh
+        document.writeln("Hello world! <br>");
+
+        //khai bao bien
+        var ten = "Van Huy <br>";
+
+        document.writeln(ten);
+
+        ten = "Ly <br>";
+
+        document.writeln(ten);
+
+        var namNay = 2026;
+
+        document.writeln(namNay);
+
+        //Phep toan
+        var soThuNhat=10;
+        var soThuHai=5;
+        var ketQua=0
+        //cong +
+        document.writeln("<br> Ket qua soThuNhat + soThuHai la:");
+        ketQua = soThuNhat + soThuHai;
+        document.writeln(ketQua);
+        //tru - 
+        document.writeln("<br> Ket qua soThuNhat - soThuHai la:");
+        ketQua = soThuNhat - soThuHai;
+        document.writeln(ketQua);
+        //nhan *
+        document.writeln("<br> Ket qua soThuNhat * soThuHai la:");
+        ketQua = soThuNhat * soThuHai;
+        document.writeln(ketQua);
+        //chia /
+        document.writeln("<br> Ket qua soThuNhat / soThuHai la:");
+        ketQua = soThuNhat / soThuHai;
+        document.writeln(ketQua);
+        //chia lay du /
+        document.writeln("<br> Ket qua soThuNhat % soThuHai la:");
+        ketQua = soThuNhat % soThuHai;
+        document.writeln(ketQua);
+
+        //++
+        document.writeln("<br>");
+        //document.writeln(++ soThuNhat );
+
+        //document.writeln("<br>");
+        //document.writeln(soThuNhat);
+
+        //--
+
+        // +=
+        soThuNhat += soThuHai;
+        document.writeln(soThuNhat);
+
+        //-=
+        soThuNhat -= soThuHai;
+        document.writeln(soThuNhat);
+
+        var ho = "Do";
+        document.writeln( "<br>" + ho + " " + ten);
+
+        document.writeln( "<br>");
+        document.writeln(ho.length);
+
+        //kiem tra kieu du lieu cua bien
+        document.writeln(typeof(ho));
+
+        //
+        var hoVaTen = "Luong Quang Anh";
+        document.writeln(hoVaTen.indexOf("Quang"));
+
+        document.writeln(hoVaTen.includes("e"));
+
+        document.writeln("<br>");
+        document.writeln(hoVaTen.startsWith("Luong"));
+        //Thay the ky tu7
+        document.writeln("<br>"); 
+        document.writeln(hoVaTen.replace("Luong","Do"));
+
+        document.writeln("<br>");
+        document.writeln(hoVaTen.toLocaleLowerCase());
+    </script>
+    <!--exterbal javascript-->
+    <br>
+    <script src="script.js"></script>
+</body>
+</html>
