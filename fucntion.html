@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //function
+        function sayHello(){
+            document.writeln("Hello");
+        }
+
+        sayHello();
+
+        //co tham so
+        function sayHello2(ten){
+            document.write("<br> Xin chao ban" + ten);
+        }
+
+        sayHello2("Quang Anh");
+        sayHello2("Ly");
+        sayHello2("Thang");
+        document.write("<br>");
+
+        function tinhTong(a,b){
+            if(isNaN(a) == false && isNaN(b) == false){
+                document.write(a+b);
+            }
+        }
+        var soThuNhat = prompt("Nhap so thu 1", "");
+        var soThuHai = prompt("Nhap so thu 2", "");
+        tinhTong(soThuNhat, sothuHai);
+        document.write(tinhTong(soThuNhat.soThuHai));
+
+    </script>
+</body>
+</html>
