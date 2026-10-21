@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        Nhap diem A : <input id="diemA" type="number">
+    </div>
+    <div>
+        Nhap diem B : <input id="diemB" type="number">
+    </div>
+    <div>
+        Nhap diem C : <input id="diemC" type="number">
+    </div>
+    <div>
+        <button onclick="tinhDiemChu()">Tinh diem</button>
+    </div>
+    <div>
+        Ket qua: <input id="ketQua" type="text">
+    </div>
+
+<br>
+
+    <div>
+        Nhap nam sinh: <input id="namSinh" type="number">
+    </div>
+    <div>
+        <button onclick="tinhTuoi()">Tinh tuoi</button>
+    </div>
+    <div>
+        Tuoi cua ban la: <input id="tuoi" type="text">
+    </div>
+    <script>
+
+        function tinhDiem(){
+             var a = parseFloat(document.getElementById("diemA").value);
+             var b = parseFloat(document.getElementById("diemB").value);
+             var c = parseFloat(document.getElementById("diemC").value);
+
+        document.getElementById("ketQua").value = tinhDiemChu(a,b,c);
+           
+        }
+
+        function tinhDiemChu(a,b,c){
+            var tong = a*0.6+b*0.3+c*0.1;
+            var kq = "";
+            if(tong >= 0 ||tong < 4){
+                kq="F";
+            }
+            else if (tong >=4 && tong < 5){
+                kq="D"
+            }
+            else if (tong >=5 && tong < 7){ 
+                kq="C"
+            }            
+            else if (tong >=7 && tong < 8){
+                kq="B"
+            }
+            else if (tong >=8 && tong < 10){
+                kq="A"
+            }
+            else {
+                kd = "diem khong hop le";
+            }
+            return kq; 
+
+        }
+
+    </script>
+</body>
+</html>
